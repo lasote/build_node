@@ -1,2 +1,13 @@
 *.pyc
 .idea
+
+body='{
+ "request": {
+ "message": "Override the commit message: this is an api request",
+ "branch":"master",
+ "config": {
+   "env": {
+     "matrix": ["CONAN_STUFF=Hello Mr World", "CONAN_STUFF=Hello Odin!"]
+   },
+  }
+}}'
