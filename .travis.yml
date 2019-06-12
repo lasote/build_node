@@ -6,4 +6,4 @@ install:
   - pip install conan
 # command to run tests
 script:
-  - echo "HELLO!"
+  - echo "HELLO!: ${CONAN_STUFF}"
