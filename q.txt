@@ -8,7 +8,7 @@ body='{
      "branch": "master",
      "merge_mode": "merge",
      "config": {
-        "env": ["CONAN_STUFF=Hello, OTHER=foo", "CONAN_STUFF2=Odin!"],
+        "env": ["CONAN_STUFF=Hello, OTHER=foo"],
         "import": [{"source": "./windows.yml", "mode": "merge"},
                    {"source": "./base.yml", "mode": "merge"}]
      }
