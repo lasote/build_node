@@ -2,4 +2,5 @@ os: windows
 language: bash
 before_install:
   - choco install python --version 3.7.2
-  - wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py
+  - wget https://bootstrap.pypa.io/get-pip.py && python3 get-pip.py
+  - pip3 install conan
