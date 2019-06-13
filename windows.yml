@@ -1,4 +1,4 @@
 os: windows
-language: generic
+language: cpp
 install:
   - choco install python --version 3.7.2
