@@ -1,6 +1,0 @@
-# command to install dependencies
-install:
-  - pip install conan
-# command to run tests
-script:
-  - echo "HELLO! ${CONAN_STUFF}"
