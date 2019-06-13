@@ -1,13 +1,2 @@
 *.pyc
 .idea
-
-body='{
- "request": {
-     "message": "Override the commit message: this is an api request",
-     "branch": "master",
-     "merge_mode": "replace",
-     "config": {
-        "env": ["CONAN_STUFF=Hello, OTHER=foo", "CONAN_STUFF2=Odin!"]
-     }
-   }
-}'

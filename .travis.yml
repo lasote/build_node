@@ -1,6 +1,3 @@
-import:
-  - source: ./windows.yml
-    mode: merge
 # command to install dependencies
 install:
   - pip install conan

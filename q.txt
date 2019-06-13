@@ -1,0 +1,15 @@
+curl -s -X POST  -H "Content-Type: application/json"  -H "Accept: application/json"  -H "Travis-API-Version: 3"  -H "Authorization: token $TRAVIS_TOKEN"  -d "$body"  https://api.travis-ci.org/repo/lasote%2Fbuild_node/requests
+
+
+
+body='{
+ "request": {
+     "message": "Build for XXX",
+     "branch": "master",
+     "merge_mode": "merge",
+     "config": {
+        "env": ["CONAN_STUFF=Hello, OTHER=foo", "CONAN_STUFF2=Odin!"],
+        "import": {"source": "./windows.yml", "mode": "merge"}
+     }
+   }
+}'
