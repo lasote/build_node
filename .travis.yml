@@ -1,3 +1,6 @@
+import:
+  - source: ./windows.yml
+    mode: merge
 language: python
 python:
   - "3.6"

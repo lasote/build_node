@@ -3,11 +3,11 @@
 
 body='{
  "request": {
- "message": "Override the commit message: this is an api request",
- "branch":"master",
- "config": {
-   "env": {
-     "matrix": ["CONAN_STUFF=Hello Mr World", "CONAN_STUFF=Hello Odin!"]
-   },
-  }
-}}'
+     "message": "Override the commit message: this is an api request",
+     "branch": "master",
+     "merge_mode": "replace",
+     "config": {
+        "env": ["CONAN_STUFF=Hello, OTHER=foo", "CONAN_STUFF2=Odin!"]
+     }
+   }
+}'
