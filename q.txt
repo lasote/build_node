@@ -9,7 +9,8 @@ body='{
      "merge_mode": "merge",
      "config": {
         "env": ["CONAN_STUFF=Hello, OTHER=foo", "CONAN_STUFF2=Odin!"],
-        "import": {"source": ["./.travis.yml", "./windows.yml"], "mode": "merge"}
+        "import": [{"source": "./windows.yml", "mode": "merge"},
+                   {"source": "./base.yml", "mode": "merge"}]
      }
    }
 }'
