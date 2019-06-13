@@ -10,7 +10,7 @@ body='{
      "config": {
         "env": ["CONAN_STUFF=Hello, OTHER=foo"],
         "import": [{"source": "./windows.yml", "mode": "merge"},
-                   {"source": "./base.yml", "mode": "merge"}]
+                   {"source": "./main.yml", "mode": "merge"}]
      }
    }
 }'
