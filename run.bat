@@ -5,4 +5,4 @@ set PIP=C:/Python37/Scripts/pip.exe
 %PIP% install --index-url https://test.pypi.org/simple/ conan==1.17.0.dev1560518880
 git clone https://github.com/lasote/ci-conan-flows.git ci
 %PIP% install -r ci/requirements.txt
-PYTHONPATH=$(pwd)/ci python ci/conan_ci/launch_single_job.py
+set PYTHONPATH=%cd%/ci python ci/conan_ci/launch_single_job.py
