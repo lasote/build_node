@@ -1,8 +1,8 @@
 os: windows
-language: c
+language: shell
 env:
   - PYTHON=C:/Python37/python.exe PIP=C:/Python37/Scripts/pip.exe
 before_install:
   - choco install python --version 3.7.2
 script:
-  - run.bat
+  - cmd.exe /C 'run.bat'
