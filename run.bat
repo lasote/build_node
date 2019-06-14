@@ -1,3 +1,4 @@
+if not exist "C:/Python37/" choco install python --version 3.7.2
 set PATH=c:/python37/Scripts;c:/python37/;%PATH%
 set PYTHON=C:/Python37/python.exe
 set PIP=C:/Python37/Scripts/pip.exe

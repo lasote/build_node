@@ -3,7 +3,5 @@ cache:
     directories:
      - C:/Python37/
 language: shell
-before_install:
-  - if not exist "C:/Python37/" choco install python --version 3.7.2
 script:
   - cmd.exe /C 'run.bat'
