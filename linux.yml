@@ -9,4 +9,4 @@ script:
                -eCONAN_CI_UPLOAD_REMOTE_NAME -eCONAN_CI_PROJECT_LOCK_PATH -eCONAN_CI_REMOTE_RESULTS_PATH \
                -eCONAN_LOGIN_USERNAME -eCONAN_PASSWORD -eARTIFACTORY_URL -eARTIFACTORY_USER \
                -eARTIFACTORY_PASSWORD -eCONAN_REVISIONS_ENABLED \
-               -v$(pwd):/home/conan --rm -it /bin/bash -c "/home/conan/run.sh"
+               -v$(pwd):/home/conan --rm -it conanio/gcc7 /bin/bash -c "/home/conan/run.sh"
