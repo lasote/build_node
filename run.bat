@@ -1,3 +1,4 @@
+set PATH=c:/python37/Scripts;c:/python37/;%PATH%
 set PYTHON=C:/Python37/python.exe
 set PIP=C:/Python37/Scripts/pip.exe
 %PIP% uninstall -y conan_package_tools
