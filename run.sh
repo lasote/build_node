@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -e
+pip uninstall conan_package_tools
 pip install conan --upgrade
 pip install --index-url https://test.pypi.org/simple/ conan==1.17.0.dev1560518880
 git clone git@github.com:lasote/ci-conan-flows.git ci
