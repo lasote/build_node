@@ -3,8 +3,7 @@ language: bash
 before_install:
   - choco install python --version 3.7.2
   - python --version
-  - C:/Python37/Scripts/python --version
-  - C:/Python37/Scripts/pip --version
-  - wget https://bootstrap.pypa.io/get-pip.py && python3 get-pip.py
+  - C:/Python37/python.exe --version
+  - C:/Python37/Scripts/pip.exe --version
 install:
   - run.bat
