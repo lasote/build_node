@@ -4,10 +4,10 @@ body='{
  "request": {
      "message": "Build for XXX",
      "branch": "master",
-     "merge_mode": "merge",
+     "merge_mode": "deep_merge",
      "config": {
         "env": ["CONAN_CI_NODE_ID=Hello CONAN_CI_REFERENCE=zlib/1.2.11@conan/stable CONAN_CI_READ_REMOTE_NAME=develop CONAN_CI_UPLOAD_REMOTE_NAME=tmp_pr CONAN_CI_PROJECT_LOCK_PATH=path/to/build CONAN_CI_REMOTE_RESULTS_PATH=path/to/other"],
-        "import": [{"source": "./windows.yml", "mode": "merge"}]
+        "import": [{"source": "./windows.yml", "mode": "deep_merge"}]
      }
    }
 }'

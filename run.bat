@@ -1,3 +1,5 @@
+set PYTHON=C:/Python37/python.exe
+set PIP=C:/Python37/Scripts/pip.exe
 %PIP% uninstall -y conan_package_tools
 %PIP% install conan --upgrade
 %PIP% install --index-url https://test.pypi.org/simple/ conan==1.17.0.dev1560518880
