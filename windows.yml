@@ -3,7 +3,7 @@ language: bash
 before_install:
   - choco install python --version 3.7.2
   - set PYTHON=C:/Python37/python.exe
-  - set PATH=C:/Python37;=C:/Python37/Scripts/;%PATH%
+  - set PATH=C:/Python37;C:/Python37/Scripts/;%PATH%
   - python --version
   - pip --versions
 script:
