@@ -1,5 +1,3 @@
-curl -s -X POST  -H "Content-Type: application/json"  -H "Accept: application/json"  -H "Travis-API-Version: 3"  -H "Authorization: token $TRAVIS_TOKEN"  -d "$body"  https://api.travis-ci.org/repo/lasote%2Fbuild_node/requests
-
 
 
 body='{
@@ -9,8 +7,12 @@ body='{
      "merge_mode": "merge",
      "config": {
         "env": ["CONAN_STUFF=Hello, OTHER=foo"],
-        "import": [{"source": "./windows.yml", "mode": "merge"},
+        "import": [{"source": "./linux.yml", "mode": "merge"},
                    {"source": "./main.yml", "mode": "merge"}]
      }
    }
 }'
+
+
+curl -s -X POST  -H "Content-Type: application/json"  -H "Accept: application/json"  -H "Travis-API-Version: 3"  -H "Authorization: token $TRAVIS_TOKEN"  -d "$body"  https://api.travis-ci.org/repo/lasote%2Fbuild_node/requests
+
