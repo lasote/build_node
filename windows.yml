@@ -1,4 +1,7 @@
 os: windows
+cache:
+    directories:
+     - C:/Python37/
 language: shell
 before_install:
   - choco install python --version 3.7.2
