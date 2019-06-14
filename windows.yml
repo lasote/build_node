@@ -1,5 +1,4 @@
 os: windows
-language: bash
 env:
   - PYTHON=C:/Python37/python.exe PIP=C:/Python37/Scripts/pip.exe
 before_install:
