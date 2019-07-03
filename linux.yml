@@ -1,5 +1,5 @@
 os: linux
-language: bash
+language: python
 services:
   - docker
 script:
